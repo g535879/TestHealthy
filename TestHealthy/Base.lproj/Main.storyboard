@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6lA-UF-kMR">
+                                <rect key="frame" x="330" y="40" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今日步数： " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xV4-28-Spl">
+                                <rect key="frame" x="240" y="30" width="90" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6e-pJ-ag3">
+                                <rect key="frame" x="270" y="285" width="60" height="30"/>
+                                <state key="normal" title="更新数据"/>
+                                <connections>
+                                    <action selector="updateStep" destination="BYZ-38-t0r" eventType="touchUpInside" id="FC5-Ba-JoD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xV4-28-Spl" firstAttribute="centerY" secondItem="6lA-UF-kMR" secondAttribute="centerY" id="OvP-LI-Ub0"/>
+                            <constraint firstItem="6lA-UF-kMR" firstAttribute="leading" secondItem="xV4-28-Spl" secondAttribute="trailing" id="P6H-7P-OfN"/>
+                            <constraint firstItem="g6e-pJ-ag3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QbO-nI-Zik"/>
+                            <constraint firstItem="g6e-pJ-ag3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Rh6-qU-wgm"/>
+                            <constraint firstItem="6lA-UF-kMR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="gec-d6-1T7"/>
+                            <constraint firstItem="6lA-UF-kMR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="30" id="yE9-SA-A2T"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="todayStep" destination="6lA-UF-kMR" id="m4e-Fu-bjy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
